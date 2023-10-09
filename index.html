@@ -6,6 +6,16 @@
 </head>
 </html>
 
+
+<html>
+<head>
+<tittle>NOTICE 01</tittle>
+</head>
+<body>
+<h1>dhyan rahe ki aap apne ek email id per sirf 02 app hi banba sakte hain.</h1>
+</body>
+</html>
+
 <html>
 <head>
 <tittle>Jet Forms</tittle>
@@ -131,6 +141,72 @@ enter your comments:
 </body>
 </head>
 </html>
+
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>app form Result Checker</title>
+</head>
+<body>
+    <h1>Roll Number Result Checker</h1>
+    <form id="resultForm">
+        <label for="rollNumber">Enter Roll Number:</label>
+        <input type="text" id="rollNumber" name="rollNumber">
+        <button type="button" onclick="checkResult()">Check Result</button>
+    </form>
+    <div id="resultDisplay"></div>
+
+    <script>
+        function checkResult() {
+            // Roll number input field se roll number collect karein
+            var rollNumber = document.getElementById("rollNumber").value;
+
+            // Yahan par aap apne result logic ko implement karein
+            // Is example mein, hum sirf kuch random results show kar rahe hain
+            var result;
+            if (rollNumber === "123") {
+                result = "Pass";
+            } else if (rollNumber === "456") {
+                result = "Fail";
+            } else {
+                result = "Roll number not found";
+            }
+
+            // Result ko display karein
+            document.getElementById("resultDisplay").innerHTML = "Result: " + result;
+        }
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Picture Viewer</title>
+    <script>
+        function showPicture() {
+            // Image name ko form se le lo
+            var imageName = document.getElementById("iHimanshu Raj").value;
+
+            // Image ko dikhao, yahan par aap apne image path ke saath customize kar sakte hain
+            document.getElementById("imageDisplay").innerHTML = '<img src="' + imageName + '" alt="User Image">';
+        }
+    </script>
+</head>
+<body>
+    <h1>Picture Viewer</h1>
+    <form>
+        Enter Image Name: <input type="text" id="imageName"><br>
+        <input type="button" value="Show Picture" onclick="showPicture()">
+    </form>
+    <div id="imageDisplay"></div>
+</body>
+</html>
+
+
 
 
 <!DOCTYPE html>
