@@ -37,15 +37,15 @@ enter Hobbies:<input type="checkbod">music
 <head>
 <tittle>state bihar/select your DISTRICT</tittle>
 </head>
-<form>
-select your DISTRICT
+<form action="form handling4.php"method="get">
+Select your District
 <select>
 <option>select</option>
 <option>Begusarai</option>
 <option>Baliya</option>
 <option>OTHER</option>
 </select>
-AB AAPKO BLOCK CHUNNA HAI
+Select your Block
 <select>
 <option>select</option>
 <option>Matihani</option>
@@ -156,7 +156,141 @@ enter your comments:
 </html>
 
 
+<html>
+    <head>
+        <tittle>your comment</tittle>
+    </head>
+    <body>
+        <form action="form handling3.php"method="get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="mobile number">Mobile Number:</label>
+            <input type="mobile number" id="number" name="mobile number"><br><br>
+
+            <label for="comments">comments:</label>
+            <input type="text" id="comments" name="comments"><br><br>
+
+            <input type="submit" value="Submit">
+            </form>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Whats Like you</title>
+</head>
+<body>
+    <h2>like for you</h2>
+    <form action="process.php"method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label>Interests:</label><br>
+        <input type="checkbox" id="interest1" name="interests[]" value="Coding">
+        <label for="interest1">Coding</label><br>
+        <input type="checkbox" id="interest2" name="interests[]" value="Online">
+        <label for="interest2">Online</label><br>
+        <input type="checkbox" id="interest3" name="interests[]" value="App Maker">
+        <label for="interest3">app maker</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <tittle>Responsive Form By Cyber Warriors</tittle>
+
+        <link rel="stylesheet" type="text/css" href="style.css"
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Registration Form</h2>
+            <div class="form container">
+                <form>
+
+                    <div class="input-name">
+                        <i class="fa fa-user"></i>
+                        <input type="text" placeholder="First name" class="name">
+
+                        <span>
+                            <i class="fa fa-user lock"></i>
+                            <input type="text" placeholder="Last name" class="name">
+                        </span>
+                    </div>
+
+                    <div class="input-name">
+                        <i class="fa fa-envelope email"></i>
+                        <input type="email" placeholder="email" class="text-name">
+                    </div>
+
+                    <div class="input-name">
+                        <i class="fa fa-lock lock"></i>
+                        <input type="password" placeholder="password" class="text-name">
+                    </div>
+
+                    <div class="input-name">
+                        <i class="fa fa-lock lock"></i>
+                        <input type="password" placeholder="Confirm password" class="text-name">
+                    </div>
+
+                    <div class="input-name">
+                        <input type="radio" class="radio-button" name="r1">
+                        <label>Male</label>
+
+                        <input type="radio" class="radio-button" name="r1">
+                        <label style="margin-right: 6px;">Female</label>
+                    </div>
+
+                    <div class="input-name">
+                        <select class="country">
+                            <option>Select a country</option>
+                            <option>India</option>
+                            <option>Italy</option>
+                            <option>Nepal</option>
+                            <option>Bhutan</option>
+                            <option>Japan</option>
+                        </select>
+                        <div cass="arrow"></div>
+                    </div>
+
+                    <div class="input-name">
+                        <input type="checkbox" id="cb" class="check-button">
+                        <label for="cb" class="check">I accept terms and condition</label>
+                    </div>
+
+                    <div class="input-name">
+                        <input type="submit" value="Register" class="button">
+                     </div>
+
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
 
 <!DOCTYPE html>
 <html>
