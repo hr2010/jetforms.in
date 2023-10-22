@@ -1,362 +1,75 @@
-<html>
-<head>
-<body>
-<marquee direction="right">welcome for Jet Forms</marquee>
-</body>
-</head>
-</html>
-
-<html>
-<head>
-<tittle>Jet Forms</tittle>
-</head>
-<body>
-<centre>
-<iframe width=100%height=100%src="two.html">
-</iframe>
-</centre>
-</body>
-</html>
-
-<html>
-<head>
-<tittle>Jet Forms Questions in you</tittle>
-</head>
-<form>
-enter your name:<input type="text"size=20><br></br>
-enter your email id:<input type="text"size=10><br></br>
-enter gender:<input type="radio"name="g">male
-             <input type="radio"name="g">female<br></br>
-enter Hobbies:<input type="checkbod">music
-              <input type="checkbod">games<br></br>
-<button type="sumbit"></button>
-</form>
-</html>
-
-<html>
-<head>
-<tittle>state bihar/select your DISTRICT</tittle>
-</head>
-<form action="form handling4.php"method="get">
-Select your District
-<select>
-<option>select</option>
-<option>Begusarai</option>
-<option>Baliya</option>
-<option>OTHER</option>
-</select>
-Select your Block
-<select>
-<option>select</option>
-<option>Matihani</option>
-<option>Begusarai</option>
-<option>OTHER</option>
-</select>
-enter your comments:
-<textarea rows=5 cols=10>hello</textarea>
-<button type="sumbit"></button>
-</form>
-</html>
-
-<html>
-<head>
-<body bgcolor="lightblue">
-</body>
-</head>
-</html>
-
-
-<html>
-<head>
-<tittle>Jet Forms Notice1</tittle>
-</head>
-<body>
-<blink>Welcome For Jet Forms</blink>
-<h1>dhyan rahe ki koi hmare website ke nakli roop ko pradarshit kar sakta hai.</h1>
-<h2>isse bachne ke upay</h2>
-<h3>hmare website ke sabse last me ek music wave ka design picture rahega</h3>
-<h4>uper me ek chalta hua text jisme welcome for Jet Forms Likha Rahega</h4>
-</body>
-</html>
-
-<html>
-<head>
-<body>
-<hr>
-<hr="100%color="red>
-</body>
-</head>
-</html>
-
-<form action="form handling2.php"method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    
-    <label for="password">password:</label>
-    <input type="password" id="password" name="password"><br><br>
-    
-    <input type="submit" value="Submit">
-</form>
-
-
 <!DOCTYPE html>
-<html>
-<head>
-    <title>App maker form</title>
-</head>
-<body>
-
-<h2>form link button </h2>
-
-<!-- Link Button -->
-<a href="https://form.jotform.com/232683311569056" class="btn">fill form</form></a>
-
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Result Checker</title>
-</head>
-<body>
-    <h1>Roll Number Result Checker</h1>
-    <form id="resultForm">
-        <label for="rollNumber">Enter Roll Number:</label>
-        <input type="text" id="rollNumber" name="rollNumber">
-        <button type="button" onclick="checkResult()">Check Result</button>
-    </form>
-    <div id="resultDisplay"></div>
-
-    <script>
-        function checkResult() {
-            // Roll number input field se roll number collect karein
-            var rollNumber = document.getElementById("rollNumber").value;
-
-            // Yahan par aap apne result logic ko implement karein
-            // Is example mein, hum sirf kuch random results show kar rahe hain
-            var result;
-            if (rollNumber === "123") {
-                result = "Pass";
-            } else if (rollNumber === "456") {
-                result = "Fail";
-            } else {
-                result = "Roll number not found";
-            }
-
-            // Result ko display karein
-            document.getElementById("resultDisplay").innerHTML = "Result: " + result;
-        }
-    </script>
-</body>
-</html>
-
-
-<html>
-    <head>
-        <tittle>your comment</tittle>
-    </head>
-    <body>
-        <form action="form handling3.php"method="get">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
-
-            <label for="mobile number">Mobile Number:</label>
-            <input type="mobile number" id="number" name="mobile number"><br><br>
-
-            <label for="comments">comments:</label>
-            <input type="text" id="comments" name="comments"><br><br>
-
-            <input type="submit" value="Submit">
-            </form>
-    </body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Whats Like you</title>
-</head>
-<body>
-    <h2>like for you</h2>
-    <form action="process.php"method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="gender">Gender:</label>
-        <select id="gender" name="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-        </select><br><br>
-
-        <label>Interests:</label><br>
-        <input type="checkbox" id="interest1" name="interests[]" value="Coding">
-        <label for="interest1">Coding</label><br>
-        <input type="checkbox" id="interest2" name="interests[]" value="Online">
-        <label for="interest2">Online</label><br>
-        <input type="checkbox" id="interest3" name="interests[]" value="App Maker">
-        <label for="interest3">app maker</label><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <tittle>Responsive Form By Cyber Warriors</tittle>
 
-        <link rel="stylesheet" type="text/css" href="style.css"
-        <!-- Add icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-
-    <body>
-        <div class="container">
-            <h2>Registration Form</h2>
-            <div class="form container">
-                <form>
-
-                    <div class="input-name">
-                        <i class="fa fa-user"></i>
-                        <input type="text" placeholder="First name" class="name">
-
-                        <span>
-                            <i class="fa fa-user lock"></i>
-                            <input type="text" placeholder="Last name" class="name">
-                        </span>
-                    </div>
-
-                    <div class="input-name">
-                        <i class="fa fa-envelope email"></i>
-                        <input type="email" placeholder="email" class="text-name">
-                    </div>
-
-                    <div class="input-name">
-                        <i class="fa fa-lock lock"></i>
-                        <input type="password" placeholder="password" class="text-name">
-                    </div>
-
-                    <div class="input-name">
-                        <i class="fa fa-lock lock"></i>
-                        <input type="password" placeholder="Confirm password" class="text-name">
-                    </div>
-
-                    <div class="input-name">
-                        <input type="radio" class="radio-button" name="r1">
-                        <label>Male</label>
-
-                        <input type="radio" class="radio-button" name="r1">
-                        <label style="margin-right: 6px;">Female</label>
-                    </div>
-
-                    <div class="input-name">
-                        <select class="country">
-                            <option>Select a country</option>
-                            <option>India</option>
-                            <option>Italy</option>
-                            <option>Nepal</option>
-                            <option>Bhutan</option>
-                            <option>Japan</option>
-                        </select>
-                        <div cass="arrow"></div>
-                    </div>
-
-                    <div class="input-name">
-                        <input type="checkbox" id="cb" class="check-button">
-                        <label for="cb" class="check">I accept terms and condition</label>
-                    </div>
-
-                    <div class="input-name">
-                        <input type="submit" value="Register" class="button">
-                     </div>
-
-                </form>
-            </div>
-        </div>
-    </body>
-
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Music Waveform</title>
-</head>
-<body>
-    <canvas id="waveform" width="800" height="100"></canvas>
-    <script>
-        // Audio file URL
-        const audioUrl = 'your_audio_file.mp3';
-        
-        const canvas = document.getElementById('waveform');
-        const context = canvas.getContext('2d');
-
-        const audio = new Audio(audioUrl);
-        audio.controls = true;
-        document.body.appendChild(audio);
-
-        audio.addEventListener('canplay', () => {
-            const audioSource = context.createMediaElementSource(audio);
-            const analyser = context.createAnalyser();
-            
-            audioSource.connect(analyser);
-            analyser.connect(context.destination);
-            
-            analyser.fftSize = 256;
-            const bufferLength = analyser.frequencyBinCount;
-            const dataArray = new Uint8Array(bufferLength);
-
-            context.clearRect(0, 0, canvas.width, canvas.height);
-
-            function drawWaveform() {
-                analyser.getByteTimeDomainData(dataArray);
-
-                context.fillStyle = 'rgb(0, 0, 0)';
-                context.fillRect(0, 0, canvas.width, canvas.height);
-                context.lineWidth = 2;
-                context.strokeStyle = 'rgb(255, 255, 255)';
-                context.beginPath();
-
-                const sliceWidth = canvas.width * 1.0 / bufferLength;
-                let x = 0;
-
-                for (let i = 0; i < bufferLength; i++) {
-                    const v = dataArray[i] / 128.0;
-                    const y = v * canvas.height / 2;
-
-                    if (i === 0) {
-                        context.moveTo(x, y);
-                    } else {
-                        context.lineTo(x, y);
-                    }
-
-                    x += sliceWidth;
-                }
-
-                context.lineTo(canvas.width, canvas.height / 2);
-                context.stroke();
+        <style>
+            .link:hover
+            {
+                background-color: white;
+            }
+            .link2:hover
+            {
+                background-color: white;
+            }
+            .link3:hover
+            {
+                background-color: white;
+            }
+            .link4:hover
+            {
+                background-color: white;
+            }
+            .link5:hover
+            {
+                background-color: white;
             }
 
-            audio.addEventListener('play', () => {
-                audio.play();
-                setInterval(drawWaveform, 30); // Refresh waveform every 30 milliseconds
-            });
-        });
-    </script>
-</body>
+            .link1:hover
+            {
+                background-color: blue;
+            }
+        </style>
+
+    </head>
+    <body>
+        <body background="E:\coding file\extra\50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg">
+            <h3 align="center">
+                <font face="Lato" size="20" color="red">Jetforms</font>
+                &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <font face="cinzel"></font>
+                <a href="https://form.jotform.com/232932714312046" class="link">
+                    <image src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fionicons%2F512%2Ficon-ios7-contact-512.png&tbnid=EvyopovtPH0MyM&vet=1&imgrefurl=https%3A%2F%2Fwww.iconfinder.com%2Ficons%2F211605%2Fcontact_icon&docid=PeAmzbWqFEq7zM&w=512&h=512&source=sh%2Fx%2Fim%2Fm1%2F1&shem=uvafe2" alt="Contact Us">
+                </a>&nbsp; &nbsp;
+                <a href="http://jetforms.blogspot.com/" class="link2">
+                    <image src="https://images.app.goo.gl/GMAjESvzLERjGRNZ6" alt="Blog">
+                </a>&nbsp; &nbsp;
+                <a href="http://jetforms.blogspot.com/2023/10/forms.html" class="link3">
+                    <image src="https://images.app.goo.gl/uZHBF2Xe4F1RQ37dA" alt="Forms">
+                </a>&nbsp; &nbsp;
+                <a href="http://jetforms.blogspot.com/2023/10/apps.html" class="link4">
+                    <image src="https://images.app.goo.gl/K5Q3pQ9jCuJrt72b8" alt="Apps">
+                </a>&nbsp; &nbsp;
+                <a href="http://jetforms.blogspot.com/2023/10/notice.html" class="link5">
+                    <image src="https://images.app.goo.gl/JH4Uq63QBTJcQgBN6" alt="Notice">
+                </a>&nbsp; &nbsp;
+            </h3>
+            <hr size="2px" width="100%" align="center" color="white" noshade>
+        </hr>
+            <br /><br />
+            <h1 align="center">
+                <font face="ELEPHANT" color="#017bf5" size="10">
+                    this website was app maker
+                </font>
+            </h1>
+            <h3 align="center">
+                <font face="latin" color="brown" size="6">
+                    what you make a any app!
+                    If yes! go to form link
+                </font>
+
+    </body>
 </html>
