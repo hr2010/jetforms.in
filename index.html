@@ -29,11 +29,59 @@
             {
                 background-color: blue;
             }
+
+            .form22
+            {
+                background-color: lightblue;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                size: 10px;
+                color: blue;
+            }
+
+            .form
+            {
+                background-color: aqua;
+                font-size: large;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: red;
+            }
+
+            .sb22
+            {
+                background-color: blueviolet;
+                color: chartreuse;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                size: 10px;
+                width: 25%;
+            }
+
+            .sb22:hover
+            {
+                background-color: red;
+            }
+
+            .f1
+            {
+                background-color: aliceblue;
+                size: 20px;
+                color: brown;
+            }
+
+            .f2{
+                background-color: azure;
+                size: 5px;
+                font-size: 20px;
+                color: red;
+            }
+
+            .f2:hover
+            {
+                background-color: lightblue;
+            }
         </style>
 
     </head>
-    <body>
-        <body background="E:\coding file\extra\50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg">
+    <body background="aqua">
             <h3 align="center">
                 <font face="Lato" size="20" color="red">Jetforms</font>
                 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -57,8 +105,7 @@
                     <image src="https://images.app.goo.gl/JH4Uq63QBTJcQgBN6" alt="Notice">
                 </a>&nbsp; &nbsp;
             </h3>
-            <hr size="2px" width="100%" align="center" color="white" noshade>
-        </hr>
+            <hr size="2px" width="100%" color="blue" noshade></hr>
             <br /><br />
             <h1 align="center">
                 <font face="ELEPHANT" color="#017bf5" size="10">
@@ -70,6 +117,94 @@
                     what you make a any app!
                     If yes! go to form link
                 </font>
+
+                <h1 class="form22">User Details Form</h1>
+    <form id="userForm" class="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required class="n33">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required class="e33">
+        <br>
+        <label for="number">Mobile Number:</label>
+        <input type="number" id="number" required class="m33">
+        <br>
+        <button type="submit" class="sb22">Save</button>
+    </form>
+
+    <div id="savedDetails">
+        <!-- Saved user details will be displayed here -->
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const userForm = document.getElementById("userForm");
+    const savedDetails = document.getElementById("savedDetails");
+    
+    userForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const number = document.getElementById("number").value;
+    
+    const userDetails = { name, email, number };
+    localStorage.setItem("userDetails", JSON.stringify(userDetails));
+    
+    displaySavedDetails();
+    });
+    
+    function displaySavedDetails() {
+    const storedUserDetails = JSON.parse(localStorage.getItem("userDetails"));
+    
+    if (storedUserDetails) {
+    savedDetails.innerHTML = `
+    <h2>Saved User Details:</h2>
+    <p><strong>Name:</strong> ${storedUserDetails.name}</p>
+    <p><strong>Email:</strong> ${storedUserDetails.email}</p>
+    <p><strong>Mobile Number:</strong> ${storedUserDetails.number}</p>
+    `;
+    }
+    }
+    
+    displaySavedDetails();
+    });
+    
+    </script>
+
+    <title>Result Checker</title>
+    <h1 class="f1">Form pass/fall result</h1>
+    <form id="resultForm">
+        <label for="rollNumber" class="f2">Enter Form Code:</label>
+        <input type="text" id="rollNumber" name="rollNumber" class="f2"> 
+        <button type="button" onclick="checkResult()" class="f2">Check Result</button>
+    </form>
+    <div id="resultDisplay"></div>
+
+    <script>
+        function checkResult() {
+            // Roll number input field se roll number collect karein
+            var rollNumber = document.getElementById("rollNumber").value;
+
+            // Yahan par aap apne result logic ko implement karein
+            // Is example mein, hum sirf kuch random results show kar rahe hain
+            var result;
+            if (rollNumber === "123") {
+                result = "Pass";
+            } else if (rollNumber === "456") {
+                result = "Fail";
+            } else {
+                result = "Roll number not found";
+            }
+
+            // Result ko display karein
+            document.getElementById("resultDisplay").innerHTML = "Result: " + result;
+        }
+        </script>
+
+        <script>
+            alert("continue to login")
+        </script>
 
     </body>
 </html>
