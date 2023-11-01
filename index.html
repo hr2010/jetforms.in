@@ -4,6 +4,17 @@
         <meta charset="utf-8">
 
         <style>
+            body
+            {
+                background-color: lightseagreen;
+            }
+
+            .mq
+            {
+                background-color: darkgrey;
+                color: red;
+                size: 10px;
+            }
             .link:hover
             {
                 background-color: white;
@@ -82,7 +93,8 @@
 
     </head>
     <body background="aqua">
-            <h3 align="center">
+        <marquee class="mq">WELCOME TO JET FORMS</marquee>
+    <h3 align="center">
                 <font face="Lato" size="20" color="red">Jetforms</font>
                 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -104,6 +116,22 @@
                 <a href="http://jetforms.blogspot.com/2023/10/notice.html" class="link5">
                     <image src="https://images.app.goo.gl/JH4Uq63QBTJcQgBN6" alt="Notice">
                 </a>&nbsp; &nbsp;
+
+
+<!-- Add a logout button -->
+<button id="logoutButton">Logout</button>
+
+<script>
+// JavaScript code to handle the logout functionality
+document.getElementById("logoutButton").addEventListener("click", function() {
+  // Clear any user-specific data or session here if needed
+
+  // Redirect the user to Google
+  window.location.href = "https://www.google.com";
+});
+</script>
+
+
             </h3>
             <hr size="2px" width="100%" color="blue" noshade></hr>
             <br /><br />
@@ -205,6 +233,38 @@
         <script>
             alert("continue to login")
         </script>
+
+    <title>Comment Form</title>
+    <h2>Comments</h2>
+    <form id="commentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+        
+        <label for="comment">Comment:</label>
+        <textarea id="comment" rows="4" cols="50" required></textarea><br><br>
+        
+        <button type="button" onclick="saveComment()">Submit</button>
+    </form>
+
+    <div id="commentList">
+        <!-- Existing comments will be displayed here -->
+    </div>
+
+    <script>
+        function saveComment() {
+            var name = document.getElementById('name').value;
+            var comment = document.getElementById('comment').value;
+
+            var commentList = document.getElementById('commentList');
+            var commentItem = document.createElement('div');
+            commentItem.innerHTML = '<strong>' + name + ':</strong> ' + comment;
+            commentList.appendChild(commentItem);
+
+            // Clear the form
+            document.getElementById('name').value = '';
+            document.getElementById('comment').value = '';
+        }
+    </script>
 
     </body>
 </html>
