@@ -4,10 +4,6 @@
         <meta charset="utf-8">
 
         <style>
-            body
-            {
-                background-color: lightseagreen;
-            }
 
             .mq
             {
@@ -51,7 +47,6 @@
 
             .form
             {
-                background-color: aqua;
                 font-size: large;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 color: red;
@@ -66,9 +61,20 @@
                 width: 25%;
             }
 
-            .sb22:hover
-            {
-                background-color: red;
+            .n33:hover{
+                background-color: aquamarine;
+            }
+
+            .e33:hover{
+                background-color: aquamarine;
+            }
+
+            .m33:hover{
+                background-color: aquamarine;
+            }
+
+            .sb22:hover{
+                background-color: bisque;
             }
 
             .f1
@@ -92,7 +98,7 @@
         </style>
 
     </head>
-    <body background="aqua">
+    <body background="E:\coding file\extra\50-Beautiful-and-Minimalist-Presentation-Backgrounds-031.jpg">
         <marquee class="mq">WELCOME TO JET FORMS</marquee>
     <h3 align="center">
                 <font face="Lato" size="20" color="red">Jetforms</font>
@@ -117,6 +123,10 @@
                     <image src="https://images.app.goo.gl/JH4Uq63QBTJcQgBN6" alt="Notice">
                 </a>&nbsp; &nbsp;
 
+                <a href="https://jetforms.blogspot.com/2023/11/form-transction.html" class="link5">
+                    <image src="https://images.app.goo.gl/JH4Uq63QBTJcQgBN6" alt="form-transction">
+                </a>&nbsp; &nbsp;
+
 
 <!-- Add a logout button -->
 <button id="logoutButton">Logout</button>
@@ -127,7 +137,7 @@ document.getElementById("logoutButton").addEventListener("click", function() {
   // Clear any user-specific data or session here if needed
 
   // Redirect the user to Google
-  window.location.href = "https://www.google.com";
+  window.location.href = "https://hr2010.github.io/jetforms/";
 });
 </script>
 
@@ -200,71 +210,10 @@ document.getElementById("logoutButton").addEventListener("click", function() {
     
     </script>
 
-    <title>Result Checker</title>
-    <h1 class="f1">Form pass/fall result</h1>
-    <form id="resultForm">
-        <label for="rollNumber" class="f2">Enter Form Code:</label>
-        <input type="text" id="rollNumber" name="rollNumber" class="f2"> 
-        <button type="button" onclick="checkResult()" class="f2">Check Result</button>
-    </form>
-    <div id="resultDisplay"></div>
-
-    <script>
-        function checkResult() {
-            // Roll number input field se roll number collect karein
-            var rollNumber = document.getElementById("rollNumber").value;
-
-            // Yahan par aap apne result logic ko implement karein
-            // Is example mein, hum sirf kuch random results show kar rahe hain
-            var result;
-            if (rollNumber === "123") {
-                result = "Pass";
-            } else if (rollNumber === "456") {
-                result = "Fail";
-            } else {
-                result = "Roll number not found";
-            }
-
-            // Result ko display karein
-            document.getElementById("resultDisplay").innerHTML = "Result: " + result;
-        }
-        </script>
-
         <script>
             alert("continue to login")
         </script>
 
-    <title>Comment Form</title>
-    <h2>Comments</h2>
-    <form id="commentForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" required><br><br>
-        
-        <label for="comment">Comment:</label>
-        <textarea id="comment" rows="4" cols="50" required></textarea><br><br>
-        
-        <button type="button" onclick="saveComment()">Submit</button>
-    </form>
-
-    <div id="commentList">
-        <!-- Existing comments will be displayed here -->
-    </div>
-
-    <script>
-        function saveComment() {
-            var name = document.getElementById('name').value;
-            var comment = document.getElementById('comment').value;
-
-            var commentList = document.getElementById('commentList');
-            var commentItem = document.createElement('div');
-            commentItem.innerHTML = '<strong>' + name + ':</strong> ' + comment;
-            commentList.appendChild(commentItem);
-
-            // Clear the form
-            document.getElementById('name').value = '';
-            document.getElementById('comment').value = '';
-        }
-    </script>
 
     </body>
 </html>
